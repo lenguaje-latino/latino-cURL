@@ -12,12 +12,8 @@ poner(resp)
 
 //se codifica un texto y se realiza una busqueda en google
 busqueda = "perros y gatos"
-poner("El texto escrito ya codificado es:\t" .. curl.escape(busqueda), 1)
-poner("Pulsa enter para hacer una petición")
-leer()
 resp = curl.peticion("https://www.google.com.mx/search?q=" .. curl.escape(busqueda))
 poner(resp)
-
 ```
 
 ##### Prerequisitos
