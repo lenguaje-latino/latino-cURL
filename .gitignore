@@ -50,3 +50,16 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+#CMake
+CMakeFiles/
+Makefile
+CMakeCache.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+
+#visual studio
+visualstudio/
