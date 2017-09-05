@@ -83,7 +83,8 @@ static void curl_peticion(lat_mv *mv) {
       return;
     } else if (res != CURLE_OK) {
       curl_easy_cleanup(curl);
-      latC_error(mv, curl_easy_strerror(res));
+      latC_apilar(mv, latO_nulo);
+      return;
     }
     tmp = latC_crear_cadena(mv, s.ptr);
     curl_easy_cleanup(curl);
