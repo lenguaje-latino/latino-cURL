@@ -1,34 +1,35 @@
 ### latino-curl
-Libreria dinamica para uso de curl en [latino](https://github.com/primitivorm/latino)
-
-##### Uso en codigo latino
-```
-//necesario para agregar la libreria dinamica
-incluir("curl")
-
-//se realiza una peticion a www.telegramforo.com y se muestra contenido
-resp = curl.peticion("www.telegramforo.com")
-poner(resp)
-
-//se codifica un texto y se realiza una busqueda en google
-busqueda = "perros y gatos"
-resp = curl.peticion("https://www.google.com.mx/search?q=" .. curl.escape(busqueda))
-poner(resp)
-```
+Librería dinámica para uso de curl en [latino](https://github.com/primitivorm/latino)
 
 ##### Prerequisitos
 Tener instalado [latino](https://github.com/primitivorm/latino)
 
-### Instalacion
+### Instalación
 ##### linux
 ```
-$git clone https://github.com/primitivorm/latino-curl
-$cd latino-curl
-$git submodule update --init --recursive
-$sudo ./instalar.sh
+git clone https://github.com/primitivorm/latino-curl
+cd latino-curl
+git submodule update --init --recursive
+sudo chmod +x instalar.sh
+sudo bash instalar.sh
 ```
 
-##### Dependecias
+#### Dependecias
 [curl](https://github.com/curl/curl)
 
-##### Cualquier aportacion o sugerencia es bienvenida
+##### Uso de esta librería en código latino
+```
+//necesario para agregar la librería dinámica
+incluir("curl")
+
+//se realiza una petición a www.telegramforo.com y se muestra contenido
+resp = curl.peticion("www.telegramforo.com")
+escribir(resp)
+
+//se codifica un texto y se realiza una búsqueda en google
+busqueda = "perros y gatos"
+resp = curl.peticion("https://www.google.com.mx/search?q=" .. curl.escape(busqueda))
+escribir(resp)
+```
+
+##### Cualquier aportación o sugerencia es bienvenida
