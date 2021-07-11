@@ -4,6 +4,8 @@ Librería dinámica para uso de curl en [latino](https://github.com/primitivorm/
 ##### Prerequisitos
 Tener instalado [latino](https://github.com/primitivorm/latino)
 
+`sudo apt-get install libssl-dev libcurl4-openssl-dev`
+
 ### Instalación
 ##### linux
 ```
